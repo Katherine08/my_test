@@ -11,7 +11,7 @@ int main() {
   printf("%15e,%20.4f\n", t, S);
   k=1; 
   while (fabs(t)>eps) { 
-    t*=-pow(x,2)/(2*k*(2*k-1)); 
+    t*=- pow(x,3) / ((3 * n - 2) * (3 * n - 1) * (3 * n));
     S+=t; 
     printf("%15e%20.4f\n", t, S);
     k++;
